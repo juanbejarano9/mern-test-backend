@@ -4,11 +4,7 @@ import app from './app.js'
 
 import cors from 'cors'
 
-const whiteList = ["http://localhost:3000/","http://crersolucionestecno.ar/"]
-
-app.use(cors({
-  origin:[whiteList]
-}));
+app.use(cors());
 
 
 connectDB();
